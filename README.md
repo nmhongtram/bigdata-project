@@ -1,7 +1,7 @@
-# TikTok Sentiment Analysis & Summarization - Big Data Project
+# TikTok Sentiment Analysis & Content Summarization - Big Data Project
 
 ## Project Overview  
-This project focuses on analyzing user sentiments toward sunscreen products on TikTok using Big Data technologies and Natural Language Processing. The repository contains datasets, trained machine learning models, and Jupyter notebooks for sentiment analysis and video content summarization. Below is a guide to the repository structure, datasets, models, and instructions for running the notebooks.
+This project focuses on analyzing user sentiments toward sunscreen products on TikTok using Big Data technologies and Natural Language Processing. The repository contains datasets, trained machine learning models, and Jupyter notebooks for sentiment analysis and video content summarization.
 
 ---
 
@@ -84,7 +84,29 @@ pip install pyspark pyvi underthesea emoji unidecode transformers tensorflow
 1. Ensure all dependencies are installed.  
 2. Download the datasets and place them in the `data` folder.  
 3. Open the notebooks in Jupyter or Google Colab.  
-4. Update file paths in the notebooks to match your local directory structure.  
+4. Update file paths in the notebooks to match your local directory structure.
+
+---
+## Key Research Findings  
+
+### 1. **Data Analysis**  
+- **Video Metadata**: Analyzed 309 TikTok videos, identifying trends in engagement (e.g., average views, likes, shares). Ads had 5.6× higher views but 2.3× lower engagement rates compared to organic content.  
+- **Top Hashtags**: `#kemchongnang` (sunscreen) and `#skincare` dominated, reflecting user interest in beauty and skincare.  
+- **Comment Insights**: Processed 13,007 comments, with 46.3% neutral, 28% positive, and 25.6% negative sentiments.  
+
+### 2. **Sentiment Analysis**  
+- **Model Performance**:  
+  - **Logistic Regression** achieved the highest accuracy (**84%**) in classifying sentiments.  
+  - **Pseudo-Labeling** improved model robustness by leveraging unlabeled data, balancing class distribution.  
+- **Dominant Themes**: Users prioritized product suitability for skin types (e.g., oily, sensitive) and expressed concerns about counterfeit products.  
+
+### 3. **Video Summarization**  
+- **Efficiency**: A hybrid pipeline combining `yt-dlp`, `SpeechRecognition`, and **Gemini API** successfully summarized video content.  
+- **Speed Comparison**: ThreadPoolExecutor (5 threads) processed 100 videos **2.4× faster** than PySpark (2 partitions).  
+
+### 4. **Technical Contributions**  
+- **NLP Pipeline**: Integrated PhoBERT embeddings for Vietnamese text, achieving state-of-the-art results in sentiment classification.  
+- **Open Datasets**: Published labeled comment data (`all_comment_labeled.tsv`) and preprocessing scripts for reproducibility.  
 
 ---
 
