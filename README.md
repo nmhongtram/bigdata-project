@@ -119,4 +119,4 @@ pip install pyspark pyvi underthesea emoji unidecode transformers tensorflow
 ---
 ## Acknowledgement
 We would like to sincerely thank Dr. Nguyễn Mạnh Tuấn for his dedicated instruction and valuable feedback throughout the Big Data and Applications course.
-We also appreciate the constructive comments and suggestions from other student groups in the Big Data and Applications course (Semester 1, 2025), which helped us identify mistakes and find appropriate ways to improve our project.
+We also appreciate the constructive comments and suggestions from other student groups in the Big Data and Applications course (UEH Semester 1, 2025), which helped us identify mistakes and find appropriate ways to improve our project.
